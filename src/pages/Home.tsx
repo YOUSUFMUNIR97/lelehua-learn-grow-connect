@@ -12,39 +12,39 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Parallax Effect */}
         <div 
-          className="absolute inset-0 bg-cover bg-center scale-105"
+          className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
         >
-          {/* Gradient Overlay with Animation */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-secondary/90 to-accent/85" />
+          {/* Lighter Gradient Overlay for Better Image Visibility */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/70 via-secondary/60 to-accent/65" />
           
-          {/* Animated Circles */}
-          <div className="absolute top-20 left-10 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+          {/* Subtle Animated Circles */}
+          <div className="absolute top-20 left-10 w-72 h-72 bg-accent/15 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
         </div>
         
         <div className="relative z-10 container mx-auto px-4 py-20">
           <div className="max-w-5xl mx-auto text-center text-white">
             {/* Bilingual Badge */}
-            <div className="inline-flex items-center gap-2 px-6 py-2 mb-8 bg-white/10 backdrop-blur-md rounded-full border border-white/20 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 px-6 py-2 mb-8 bg-white/20 backdrop-blur-lg rounded-full border border-white/30 shadow-lg animate-fade-in-up">
               <Sparkles className="w-4 h-4" />
               <span className="text-sm font-inter font-medium">了了家 • Lelehua's Home</span>
             </div>
             
-            {/* Main Heading with Shimmer Effect */}
-            <h1 className="font-poppins font-extrabold text-5xl md:text-7xl lg:text-8xl mb-6 animate-fade-in-up leading-tight" style={{ animationDelay: '0.1s' }}>
+            {/* Main Heading with Text Shadow for Better Readability */}
+            <h1 className="font-poppins font-extrabold text-5xl md:text-7xl lg:text-8xl mb-6 animate-fade-in-up leading-tight drop-shadow-2xl" style={{ animationDelay: '0.1s', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
               <span className="block mb-2">Growing</span>
               <span className="text-shimmer block">Bilingual Minds</span>
               <span className="block mt-2">Together</span>
             </h1>
             
             {/* Chinese Subtitle */}
-            <p className="font-inter text-2xl md:text-3xl mb-4 opacity-90 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <p className="font-inter text-2xl md:text-3xl mb-4 opacity-95 animate-fade-in-up drop-shadow-lg" style={{ animationDelay: '0.2s', textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
               双语育儿 • 文化传承 • 社区成长
             </p>
             
             {/* English Description */}
-            <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed font-light animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up drop-shadow-md bg-black/10 backdrop-blur-sm rounded-2xl p-4" style={{ animationDelay: '0.3s' }}>
               Empowering families through bilingual education, cultural connection, and community support. 
               Building futures where children thrive in multiple languages and cultures.
             </p>
@@ -65,25 +65,25 @@ const Home = () => {
             
             {/* Stats Section */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all">
+              <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-6 border border-white/30 hover:bg-white/30 transition-all shadow-xl">
                 <Users className="w-8 h-8 mx-auto mb-2" />
                 <div className="font-poppins font-bold text-3xl mb-1">500+</div>
-                <div className="text-sm opacity-90">Families</div>
+                <div className="text-sm opacity-95">Families</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all">
+              <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-6 border border-white/30 hover:bg-white/30 transition-all shadow-xl">
                 <BookOpen className="w-8 h-8 mx-auto mb-2" />
                 <div className="font-poppins font-bold text-3xl mb-1">12+</div>
-                <div className="text-sm opacity-90">Programs</div>
+                <div className="text-sm opacity-95">Programs</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all">
+              <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-6 border border-white/30 hover:bg-white/30 transition-all shadow-xl">
                 <Heart className="w-8 h-8 mx-auto mb-2" />
                 <div className="font-poppins font-bold text-3xl mb-1">100%</div>
-                <div className="text-sm opacity-90">Love & Care</div>
+                <div className="text-sm opacity-95">Love & Care</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all">
+              <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-6 border border-white/30 hover:bg-white/30 transition-all shadow-xl">
                 <Sparkles className="w-8 h-8 mx-auto mb-2" />
                 <div className="font-poppins font-bold text-3xl mb-1">2</div>
-                <div className="text-sm opacity-90">Languages</div>
+                <div className="text-sm opacity-95">Languages</div>
               </div>
             </div>
           </div>
