@@ -32,9 +32,9 @@ const Home = () => {
             </div>
             
             {/* Main Heading with Text Shadow for Better Readability */}
-            <h1 className="font-poppins font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 animate-fade-in-up leading-tight drop-shadow-2xl" style={{ animationDelay: '0.1s', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+            <h1 className="font-poppins font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 animate-fade-in-up leading-tight drop-shadow-2xl px-4" style={{ animationDelay: '0.1s', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
               <span className="block mb-2">Growing</span>
-              <span className="text-shimmer block break-words">Bilingual Minds</span>
+              <span className="text-shimmer block">Bilingual Minds</span>
               <span className="block mt-2">Together</span>
             </h1>
             

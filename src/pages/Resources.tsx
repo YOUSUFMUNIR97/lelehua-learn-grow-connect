@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Download, Video, FileText } from "lucide-react";
+import { BookOpen, Download, Video, FileText, ExternalLink } from "lucide-react";
 
 const Resources = () => {
   const articles = [
@@ -66,6 +66,41 @@ const Resources = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
+            {/* Featured Article */}
+            <div className="mb-12">
+              <h2 className="font-poppins font-bold text-3xl mb-6 text-foreground">
+                Featured Article
+              </h2>
+              <Card className="border-none shadow-xl bg-gradient-to-br from-primary/5 to-secondary/5">
+                <CardHeader>
+                  <div className="text-sm text-secondary font-semibold mb-2">
+                    Sustainability & Education
+                  </div>
+                  <CardTitle className="font-poppins text-3xl mb-3">
+                    Singapore's Food Sustainability: Teaching Our Children About the Future
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+                    Learn about Singapore's 30 by 30 food sustainability goal and how we can teach 
+                    our children about sustainable eating, local food production, and environmental 
+                    responsibility. This aligns perfectly with Lelehua's values of stewardship and 
+                    caring for our planet.
+                  </p>
+                  <a 
+                    href="https://www.channelnewsasia.com/singapore/30-30-food-sustainability-goal-replace-fibre-protein-5441756?cid=internal_sharetool_androidphone_04112025_cna"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button size="lg" className="font-poppins font-semibold">
+                      Read Full Article
+                      <ExternalLink className="w-4 h-4 ml-2" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+            </div>
+
             <h2 className="font-poppins font-bold text-3xl mb-8 text-foreground">
               Latest Articles
             </h2>
