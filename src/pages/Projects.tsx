@@ -4,7 +4,7 @@ import { Calendar, Users, BookOpen, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import programsImage from "@/assets/programs.jpg";
 
-const Programs = () => {
+const Projects = () => {
   const programs = [
     {
       title: "Little Linguists",
@@ -42,7 +42,7 @@ const Programs = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-poppins font-bold text-5xl mb-6 text-foreground">
-              Our Programs
+              Our Projects
             </h1>
             <p className="text-xl text-muted-foreground">
               Discover engaging bilingual learning opportunities for every age and stage
@@ -135,4 +135,4 @@ const Programs = () => {
   );
 };
 
-export default Programs;
+export default Projects;

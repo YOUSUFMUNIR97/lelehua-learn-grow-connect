@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.jpeg";
 
 const Navigation = () => {
   const location = useLocation();
@@ -10,7 +11,7 @@ const Navigation = () => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
-    { path: "/programs", label: "Programs" },
+    { path: "/projects", label: "Projects" },
     { path: "/resources", label: "Resources" },
     { path: "/gallery", label: "Gallery" },
     { path: "/join", label: "Join Us" },
@@ -21,8 +22,9 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="font-poppins font-bold text-2xl text-primary">
-            Lelehua
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logo} alt="Lelehua Logo" className="h-10 w-10 rounded-lg" />
+            <span className="font-poppins font-bold text-2xl text-primary">Lelehua</span>
           </Link>
 
           {/* Desktop Navigation */}

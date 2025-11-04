@@ -28,13 +28,13 @@ const Home = () => {
             {/* Bilingual Badge */}
             <div className="inline-flex items-center gap-2 px-6 py-2 mb-8 bg-white/20 backdrop-blur-lg rounded-full border border-white/30 shadow-lg animate-fade-in-up">
               <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-inter font-medium">了了家 • Lelehua's Home</span>
+              <span className="text-sm font-inter font-medium">Lelehua's Singapore Adventures 乐乐华了了家</span>
             </div>
             
             {/* Main Heading with Text Shadow for Better Readability */}
-            <h1 className="font-poppins font-extrabold text-5xl md:text-7xl lg:text-8xl mb-6 animate-fade-in-up leading-tight drop-shadow-2xl" style={{ animationDelay: '0.1s', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+            <h1 className="font-poppins font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 animate-fade-in-up leading-tight drop-shadow-2xl" style={{ animationDelay: '0.1s', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
               <span className="block mb-2">Growing</span>
-              <span className="text-shimmer block">Bilingual Minds</span>
+              <span className="text-shimmer block break-words">Bilingual Minds</span>
               <span className="block mt-2">Together</span>
             </h1>
             
@@ -56,9 +56,9 @@ const Home = () => {
                   Join Our Community
                 </Button>
               </Link>
-              <Link to="/programs">
+              <Link to="/projects">
                 <Button size="lg" variant="outline" className="font-poppins font-semibold text-lg px-8 py-6 bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-primary shadow-xl hover:shadow-2xl transition-all hover:scale-105">
-                  Explore Programs
+                  Explore Projects
                 </Button>
               </Link>
             </div>

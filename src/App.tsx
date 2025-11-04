@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Index from "./pages/Index";
 import About from "./pages/About";
-import Programs from "./pages/Programs";
+import Projects from "./pages/Projects";
 import Resources from "./pages/Resources";
 import Gallery from "./pages/Gallery";
 import Join from "./pages/Join";
@@ -24,7 +24,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<Layout><About /></Layout>} />
-          <Route path="/programs" element={<Layout><Programs /></Layout>} />
+          <Route path="/projects" element={<Layout><Projects /></Layout>} />
           <Route path="/resources" element={<Layout><Resources /></Layout>} />
           <Route path="/gallery" element={<Layout><Gallery /></Layout>} />
           <Route path="/join" element={<Layout><Join /></Layout>} />
