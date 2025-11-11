@@ -6,8 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Index from "./pages/Index";
 import About from "./pages/About";
+import Logo from "./pages/Logo";
 import Projects from "./pages/Projects";
 import Resources from "./pages/Resources";
+import BlogPost from "./pages/BlogPost";
+import Stories from "./pages/Stories";
+import StoryPost from "./pages/StoryPost";
 import Gallery from "./pages/Gallery";
 import Join from "./pages/Join";
 import Contact from "./pages/Contact";
@@ -24,8 +28,12 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<Layout><About /></Layout>} />
+          <Route path="/logo" element={<Layout><Logo /></Layout>} />
           <Route path="/projects" element={<Layout><Projects /></Layout>} />
           <Route path="/resources" element={<Layout><Resources /></Layout>} />
+          <Route path="/resources/blog/:slug" element={<Layout><BlogPost /></Layout>} />
+          <Route path="/stories" element={<Layout><Stories /></Layout>} />
+          <Route path="/stories/:slug" element={<Layout><StoryPost /></Layout>} />
           <Route path="/gallery" element={<Layout><Gallery /></Layout>} />
           <Route path="/join" element={<Layout><Join /></Layout>} />
           <Route path="/contact" element={<Layout><Contact /></Layout>} />
