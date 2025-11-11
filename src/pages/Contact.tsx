@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, MapPin, Phone, Instagram, Youtube } from "lucide-react";
+import { Mail, MapPin, Phone, Instagram, Youtube, Facebook, Music } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -108,9 +108,18 @@ const Contact = () => {
 
               <div>
                 <h3 className="font-poppins font-semibold text-xl mb-4">Connect on Social Media</h3>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                   <a
-                    href="https://www.instagram.com/lelehuacom"
+                    href="https://www.facebook.com/share/1A4nnMMmMf/?mibextid=wwXIfr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="w-6 h-6 text-primary" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/lelehuacom?igsh=MTNydnZ3azgzYm1qbA%3D%3D&utm_source=qr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
@@ -119,13 +128,40 @@ const Contact = () => {
                     <Instagram className="w-6 h-6 text-primary" />
                   </a>
                   <a
-                    href="#"
+                    href="https://youtube.com/@lelehuacom?si=BqR7lO1HOb8ptQeR"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
                     aria-label="YouTube"
                   >
                     <Youtube className="w-6 h-6 text-primary" />
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@lelehuacom?is_from_webapp=1&sender_device=pc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                    aria-label="TikTok"
+                  >
+                    <Music className="w-6 h-6 text-primary" />
+                  </a>
+                  <a
+                    href="https://xhslink.com/m/94yhY0ZsRw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                    aria-label="RedCity"
+                  >
+                    <svg className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                    </svg>
+                  </a>
+                  <a
+                    href="mailto:hello@lelehua.com"
+                    className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                    aria-label="Email"
+                  >
+                    <Mail className="w-6 h-6 text-primary" />
                   </a>
                 </div>
               </div>
