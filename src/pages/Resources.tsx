@@ -1,34 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Download, Video, FileText, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
+import { articles } from "@/data/articles";
+import { stories } from "@/data/stories";
 
 const Resources = () => {
-  const articles = [
-    {
-      title: "5 Tips for Raising Bilingual Children",
-      category: "Parenting Tips",
-      excerpt: "Practical strategies for maintaining both languages at home and creating a rich bilingual environment for your children.",
-      readTime: "5 min read"
-    },
-    {
-      title: "The Benefits of Early Language Learning",
-      category: "Research",
-      excerpt: "Discover the cognitive, social, and academic advantages that bilingual children experience.",
-      readTime: "7 min read"
-    },
-    {
-      title: "Creating a Language-Rich Home Environment",
-      category: "Home Activities",
-      excerpt: "Simple ways to incorporate both languages into daily routines and make learning natural and fun.",
-      readTime: "6 min read"
-    },
-    {
-      title: "Celebrating Cultural Identity Through Language",
-      category: "Culture",
-      excerpt: "How bilingualism helps children connect with their heritage and develop a strong sense of identity.",
-      readTime: "8 min read"
-    }
-  ];
 
   const downloadables = [
     {
@@ -105,29 +82,69 @@ const Resources = () => {
               Latest Articles
             </h2>
             <div className="grid md:grid-cols-2 gap-6 mb-16">
-              {articles.map((article, index) => (
-                <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-                  <CardHeader>
-                    <div className="text-sm text-secondary font-semibold mb-2">
-                      {article.category}
-                    </div>
-                    <CardTitle className="font-poppins text-2xl">
-                      {article.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground mb-4">
-                      {article.excerpt}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">{article.readTime}</span>
-                      <Button variant="ghost" className="text-primary">
-                        Read More →
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
+              {articles.map((article) => (
+                <Link key={article.slug} to={`/resources/blog/${article.slug}`}>
+                  <Card className="border-none shadow-lg hover:shadow-xl transition-shadow cursor-pointer h-full">
+                    <CardHeader>
+                      <div className="text-sm text-secondary font-semibold mb-2">
+                        {article.category}
+                      </div>
+                      <CardTitle className="font-poppins text-2xl">
+                        {article.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground mb-4">
+                        {article.excerpt}
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-muted-foreground">{article.readTime}</span>
+                        <Button variant="ghost" className="text-primary">
+                          Read More →
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
+            </div>
+
+            <h2 className="font-poppins font-bold text-3xl mb-8 text-foreground">
+              Bilingual Stories
+            </h2>
+            <p className="text-muted-foreground mb-8 text-lg">
+              Explore our collection of bilingual stories that teach sustainability, community values, and environmental stewardship.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mb-16">
+              {stories.slice(0, 3).map((story) => (
+                <Link key={story.slug} to={`/stories/${story.slug}`}>
+                  <Card className="border-none shadow-lg hover:shadow-xl transition-shadow cursor-pointer h-full">
+                    <CardHeader>
+                      <CardTitle className="font-poppins text-xl mb-2">
+                        {story.title.english}
+                      </CardTitle>
+                      <div className="text-sm text-secondary font-semibold">
+                        {story.title.chinese}
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground mb-4 text-sm">
+                        {story.excerpt}
+                      </p>
+                      <Button variant="outline" size="sm" className="w-full">
+                        Read Story →
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center mb-16">
+              <Link to="/stories">
+                <Button size="lg" variant="outline" className="font-poppins font-semibold">
+                  View All Stories
+                </Button>
+              </Link>
             </div>
 
             <h2 className="font-poppins font-bold text-3xl mb-8 text-foreground">

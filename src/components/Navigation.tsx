@@ -14,6 +14,7 @@ const Navigation = () => {
     { path: "/logo", label: "Logo" },
     { path: "/projects", label: "Projects" },
     { path: "/resources", label: "Resources" },
+    { path: "/stories", label: "Stories" },
     { path: "/gallery", label: "Gallery" },
     { path: "/join", label: "Join Us" },
     { path: "/contact", label: "Contact" },
