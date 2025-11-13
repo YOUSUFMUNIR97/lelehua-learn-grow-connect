@@ -75,8 +75,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-poppins font-semibold mb-1">Email</h3>
-                    <a href="mailto:hello@lelehua.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      hello@lelehua.com
+                    <a href="mailto:admin@lelehua.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      admin@lelehua.com
                     </a>
                   </div>
                 </div>
@@ -157,7 +157,7 @@ const Contact = () => {
                     </svg>
                   </a>
                   <a
-                    href="mailto:hello@lelehua.com"
+                    href="mailto:admin@lelehua.com"
                     className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
                     aria-label="Email"
                   >
