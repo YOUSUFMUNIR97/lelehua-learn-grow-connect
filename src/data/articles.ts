@@ -17,6 +17,93 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "how-to-raise-bilingual-child-not-fluent",
+    title: "How to raise a bilingual child, even if you are not fluent in one of the languages",
+    category: "Parenting",
+    excerpt: "Parents can help their child become bilingual even if they are not fluent in one of the languages, say experts. A parent's attitude and determination can make a huge difference in a child's success at picking up a language.",
+    readTime: "6 min read",
+    publishDate: "2025-03-02",
+    content: {
+      sections: [
+        {
+          paragraphs: [
+            "Parents can help their child become bilingual even if they are not fluent in one of the languages, say experts. An educator who published a book on how parents can do so, says a parent's attitude and determination can make a huge difference in his or her child's success at picking up a language."
+          ]
+        },
+        {
+          heading: "A Positive Attitude Makes a Difference",
+          paragraphs: [
+            "Even if parents are not fully fluent in a second language, their enthusiasm and positive attitude toward the language can inspire children. Experts suggest that parents focus on creating an environment where the language is valued and used regularly, rather than worrying about perfect fluency.",
+            "Learning alongside your child can be a bonding experience. When parents show willingness to learn and make mistakes, children feel more comfortable doing the same."
+          ]
+        },
+        {
+          heading: "Practical Strategies for Non-Fluent Parents",
+          paragraphs: [
+            "Use resources like books, apps, videos, and music in the target language. These tools provide correct pronunciation and grammar models that complement your efforts.",
+            "Connect with native speakers through community groups, online platforms, or cultural centers. Regular interaction with fluent speakers gives children authentic language exposure.",
+            "Establish routines where the second language is used consistently, such as during mealtimes or bedtime stories. Consistency helps children develop familiarity and comfort with the language."
+          ]
+        },
+        {
+          heading: "Focus on Communication, Not Perfection",
+          paragraphs: [
+            "The goal is meaningful communication, not flawless grammar. Children benefit from hearing and using the language in real-life contexts, even if the language use isn't perfect.",
+            "Celebrate small victories and progress. Every word learned, every sentence attempted, is a step forward in the bilingual journey."
+          ]
+        }
+      ]
+    },
+    relatedArticles: ["bilingual-children-5-tips", "early-language-learning-benefits"]
+  },
+  {
+    slug: "taylor-swift-explicit-parenting",
+    title: "Taylor Swift's getting explicit. Parents, don't tune out",
+    category: "Parenting",
+    excerpt: "Banning artistes or switching radio stations may be instinctive for parents who want to shield their children from suggestive pop music. There's a better way to handle explicit content while maintaining open communication with your children.",
+    readTime: "5 min read",
+    publishDate: "2025-10-28",
+    content: {
+      sections: [
+        {
+          paragraphs: [
+            "As a young teen in the 1990s, I remember mindlessly scribbling the words of a popular Madonna song on my science lab table: 'I'm crazy for you, touch me once and you'll know it's true.' Of course, I got into trouble – I had to copy the sentence 'I will not vandalise school property' multiple times, and call my parents. But it is for that reason the incident stuck in my head.",
+            "Today's parents face similar challenges with popular music containing explicit content. Banning artistes or switching radio stations may be instinctive reactions, but there's a better approach that maintains open communication and teaches critical thinking."
+          ]
+        },
+        {
+          heading: "The Challenge of Pop Culture",
+          paragraphs: [
+            "Popular music is everywhere – from car radios to school gatherings to social media. Trying to completely shield children from explicit content is nearly impossible and may even make it more appealing as 'forbidden fruit.'",
+            "Instead of avoidance, parents can use these moments as opportunities for meaningful conversations about values, relationships, and media literacy."
+          ]
+        },
+        {
+          heading: "Engage, Don't Ban",
+          paragraphs: [
+            "Listen to the music with your children and discuss the lyrics. Ask them what they think the song means and how it makes them feel. This opens dialogue about complex topics in a safe, supportive environment.",
+            "Help children develop critical thinking skills by analyzing messages in popular media. Discuss why certain language or themes might not align with your family's values, without making it a lecture."
+          ]
+        },
+        {
+          heading: "Building Media Literacy",
+          paragraphs: [
+            "Teach children to be discerning consumers of media. Help them understand that entertainment doesn't always reflect real-life values or healthy relationships.",
+            "Encourage them to think about the messages behind the music and how those messages might influence their thoughts and behaviors. This skill serves them well beyond just music – it applies to all forms of media and peer influence."
+          ]
+        },
+        {
+          heading: "Maintaining Connection",
+          paragraphs: [
+            "The goal isn't to control what children listen to, but to maintain open communication so they feel comfortable discussing any topic with you. When you engage with their interests rather than dismiss them, you build trust and influence.",
+            "Remember: You can't be everywhere, but you can be someone your child trusts to talk to about anything – including the music they love."
+          ]
+        }
+      ]
+    },
+    relatedArticles: ["language-rich-home", "bilingual-children-5-tips"]
+  },
+  {
     slug: "bilingual-children-5-tips",
     title: "The Power of Bilingual Children: 5 Tips for Nurturing Young Language Learners",
     category: "Language Learning",
