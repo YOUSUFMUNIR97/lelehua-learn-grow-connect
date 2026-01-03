@@ -1,9 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Instagram, Youtube, Image } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const Gallery = () => {
   return (
     <div className="font-inter">
+      <SEO 
+        title="View Bilingual Animation & Music Videos for Children | LeLeHua"
+        description="Watch bilingual animation, music videos, and learning clips for children in Singapore focused on Chinese-English development, sustainability, and creative family learning."
+        canonicalUrl="https://lelehua.com/gallery"
+      />
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

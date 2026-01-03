@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Users, BookOpen, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import programsImage from "@/assets/programs.jpg";
+import SEO from "@/components/SEO";
 
 const Projects = () => {
   const programs = [
@@ -38,6 +39,11 @@ const Projects = () => {
 
   return (
     <div className="font-inter">
+      <SEO 
+        title="Bilingual Projects and Sustainable Learning for Children | LeLeHua"
+        description="Browse bilingual projects featuring kids' learning videos, sustainability stories, Chinese-English education content, and creative programmes designed for families across Singapore."
+        canonicalUrl="https://lelehua.com/projects"
+      />
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

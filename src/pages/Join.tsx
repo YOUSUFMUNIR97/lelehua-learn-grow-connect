@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle2 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const Join = () => {
   const { toast } = useToast();
@@ -60,6 +61,11 @@ const Join = () => {
 
   return (
     <div className="font-inter">
+      <SEO 
+        title="Join Our Bilingual Learning Programme for Families in SG | LeLeHua"
+        description="Join our bilingual learning programme in Singapore for kids and families. Support Chinese-English language development with childcare activities, stories, and sustainable media."
+        canonicalUrl="https://lelehua.com/join"
+      />
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

@@ -15,6 +15,7 @@ import StoryPost from "./pages/StoryPost";
 import Gallery from "./pages/Gallery";
 import Join from "./pages/Join";
 import Contact from "./pages/Contact";
+import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,7 +28,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/about" element={<Layout><About /></Layout>} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="/logo" element={<Layout><Logo /></Layout>} />
           <Route path="/projects" element={<Layout><Projects /></Layout>} />
           <Route path="/resources" element={<Layout><Resources /></Layout>} />

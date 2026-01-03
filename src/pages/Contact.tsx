@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, MapPin, Phone, Instagram, Youtube, Facebook, Music } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -43,6 +44,11 @@ const Contact = () => {
 
   return (
     <div className="font-inter">
+      <SEO 
+        title="Contact Us for Bilingual Learning & Childcare Support SG | LeLeHua"
+        description="Contact LeLeHua for bilingual learning support, childcare guidance, Chinese-English education resources, sustainability videos, and family-friendly programmes in Singapore."
+        canonicalUrl="https://lelehua.com/contact"
+      />
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
