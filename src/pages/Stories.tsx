@@ -3,10 +3,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { stories, prologue, bookOverview } from "@/data/stories";
 import { BookOpen } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const Stories = () => {
   return (
     <div className="font-inter">
+      <SEO 
+        title="Read Bilingual Stories for Kids & Sustainable Learning | LeLeHua"
+        description="Enjoy bilingual stories for children in Singapore featuring Chinese-English learning, cultural lessons, sustainability themes, and videos designed for fun family education."
+        canonicalUrl="https://lelehua.com/stories"
+      />
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

@@ -1,9 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Heart, Sparkles } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const About = () => {
   return (
     <div className="font-inter">
+      <SEO 
+        title="Learn About Our Bilingual Education Mission in Singapore | LeLeHua"
+        description="Learn about LeLeHua's bilingual education mission in Singapore, supporting Chinese-English language development, sustainable learning, and family-focused bilingual programmes."
+        canonicalUrl="https://lelehua.com/about"
+      />
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">

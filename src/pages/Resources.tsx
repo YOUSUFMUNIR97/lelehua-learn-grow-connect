@@ -4,6 +4,7 @@ import { BookOpen, Download, Video, FileText, ExternalLink } from "lucide-react"
 import { Link } from "react-router-dom";
 import { articles } from "@/data/articles";
 import { stories } from "@/data/stories";
+import SEO from "@/components/SEO";
 
 const Resources = () => {
 
@@ -27,6 +28,11 @@ const Resources = () => {
 
   return (
     <div className="font-inter">
+      <SEO 
+        title="Access Bilingual Learning Resources & Videos for Kids | LeLeHua"
+        description="Access bilingual learning resources for children and families in Singapore, including childcare support, Chinese-English activities, sustainability videos, and educational guides."
+        canonicalUrl="https://lelehua.com/resources"
+      />
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
