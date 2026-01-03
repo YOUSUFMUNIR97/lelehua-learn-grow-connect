@@ -1,9 +1,15 @@
 import { Card } from "@/components/ui/card";
 import logo from "@/assets/logo.jpeg";
+import SEO from "@/components/SEO";
 
 const Logo = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Bilingual Learning Identity and Logo for Kids in Singapore | LeLeHua"
+        description="LeLeHua's logo reflects bilingual learning in Singapore, symbolizing Chinese-English education, creativity, sustainability values, and child-friendly cultural storytelling."
+        canonicalUrl="https://lelehua.com/logo"
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="container mx-auto px-4">

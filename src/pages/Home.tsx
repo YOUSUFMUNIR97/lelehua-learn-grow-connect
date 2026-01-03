@@ -4,10 +4,16 @@ import { Link } from "react-router-dom";
 import { BookOpen, Users, Heart, Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-learning.jpg";
 import communityImage from "@/assets/community.jpg";
+import SEO from "@/components/SEO";
 
 const Home = () => {
   return (
     <div className="font-inter">
+      <SEO 
+        title="Bilingual Learning Adventures for Kids and Youths | Lelehua"
+        description="Bilingual learning in Singapore for children and families with stories for a sustainable world. Explore bilingual education, music, animations, and childcare insights at LeLeHua."
+        canonicalUrl="https://lelehua.com/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Parallax Effect */}
