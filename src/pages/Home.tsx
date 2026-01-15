@@ -39,9 +39,9 @@ const Home = () => {
             
             {/* Main Heading with Text Shadow for Better Readability */}
             <h1 className="font-poppins font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-8 animate-fade-in-up leading-relaxed drop-shadow-2xl px-4 py-2" style={{ animationDelay: '0.1s', textShadow: '0 4px 20px rgba(0,0,0,0.5)', lineHeight: '1.3' }}>
-              <span className="block mb-3">Growing</span>
-              <span className="text-shimmer block pb-2">Bilingual Minds</span>
-              <span className="block mt-3">Together</span>
+              <span className="block mb-3">Growing With</span>
+              <span className="text-shimmer block pb-2">Two Languages,</span>
+              <span className="block mt-3">One Small Moment at a Time</span>
             </h1>
             
             {/* Chinese Subtitle */}
@@ -108,12 +108,38 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-poppins font-bold text-4xl mb-6 text-foreground">
-              Welcome to Lelehua
+              Growing With Two Languages, One Small Moment at a Time
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Lelehua is more than a brand—it's a vibrant community dedicated to nurturing bilingual learning 
-              for children and families. We believe in the power of language to connect cultures, open minds, 
-              and create lasting bonds within our community.
+              Kids pick up things fast. A word here, a sound there. At Lelehua, we keep it simple. Our work ties small stories to big values. Each story links to our earth, our people, and the way we treat both. These are Stories for a sustainable world that shape how children talk, play, and think. It works well for families searching for bilingual Singapore paths that feel warm and real. Our bilingual programme keeps the pace gentle—good for parents who want a steady bilingual education in Singapore without stress.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Learning That Feels Like Home Section */}
+      <section className="py-20 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-poppins font-bold text-4xl mb-6 text-foreground">
+              Learning That Feels Like Home
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Some kids learn in tiny steps. Some jump. Both are fine. We build tools that let them move in their own way. Words grow by use, not pressure. You will see this across our lessons. Kids get stories, sounds, and hands-on bits tied to Stories for a Sustainable World and easy home routines. This keeps bilingual Singapore families close to the process. Our bilingual programme sets calm patterns that match daily life. We shape bilingual education in Singapore to feel soft and honest.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Small Voices, Big Care Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-poppins font-bold text-4xl mb-6 text-foreground">
+              Small Voices, Big Care
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              A child tests a word. Then tries it again. The habit builds. We guide that habit through kind stories and simple tasks. Parents stay part of it too. They get short notes, quick tips, and story cues. Many link back to Stories for a Sustainable World, which keeps ideas grounded. It helps bilingual Singapore families stay steady. Our bilingual programme grows at a child's own rhythm. This is bilingual education in Singapore made easy to follow.
             </p>
           </div>
         </div>
@@ -187,12 +213,10 @@ const Home = () => {
             </div>
             <div>
               <h2 className="font-poppins font-bold text-4xl mb-6 text-foreground">
-                Join Our Growing Community
+                A Place for Slow, Steady Growth
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Become part of a supportive network of families committed to bilingual education. 
-                Share experiences, access exclusive resources, and participate in enriching programs 
-                designed to help your children thrive in a multilingual world.
+                Lelehua grows language with care, one tiny spark at a time, keeping families close and giving children room to bloom on their own terms. Become part of a supportive network of families committed to bilingual education. Share experiences, access exclusive resources, and participate in enriching programs designed to help your children thrive in a multilingual world.
               </p>
               <Link to="/join">
                 <Button size="lg" className="font-poppins font-semibold">
