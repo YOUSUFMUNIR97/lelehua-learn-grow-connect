@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { BookOpen, Users, Heart, Sparkles } from "lucide-react";
+import { BookOpen, Users, Heart, Sparkles, Home as HomeIcon, MessageCircle, Leaf } from "lucide-react";
 import heroImage from "@/assets/hero-learning.jpg";
 import communityImage from "@/assets/community.jpg";
 import SEO from "@/components/SEO";
@@ -39,9 +39,9 @@ const Home = () => {
             
             {/* Main Heading with Text Shadow for Better Readability */}
             <h1 className="font-poppins font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-8 animate-fade-in-up leading-relaxed drop-shadow-2xl px-4 py-2" style={{ animationDelay: '0.1s', textShadow: '0 4px 20px rgba(0,0,0,0.5)', lineHeight: '1.3' }}>
-              <span className="block mb-3">Growing With</span>
-              <span className="text-shimmer block pb-2">Two Languages,</span>
-              <span className="block mt-3">One Small Moment at a Time</span>
+              <span className="block mb-3">Growing</span>
+              <span className="text-shimmer block pb-2">Bilingual Minds</span>
+              <span className="block mt-3">Together</span>
             </h1>
             
             {/* Chinese Subtitle */}
@@ -103,44 +103,54 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Introduction Section */}
-      <section className="py-20 bg-background">
+      {/* Content Sections with Better Layout */}
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-poppins font-bold text-4xl mb-6 text-foreground">
-              Growing With Two Languages, One Small Moment at a Time
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Kids pick up things fast. A word here, a sound there. At Lelehua, we keep it simple. Our work ties small stories to big values. Each story links to our earth, our people, and the way we treat both. These are Stories for a sustainable world that shape how children talk, play, and think. It works well for families searching for bilingual Singapore paths that feel warm and real. Our bilingual programme keeps the pace gentle—good for parents who want a steady bilingual education in Singapore without stress.
-            </p>
-          </div>
-        </div>
-      </section>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-primary/5 to-transparent">
+              <CardContent className="p-8">
+                <div className="w-14 h-14 mb-6 rounded-2xl bg-primary/10 flex items-center justify-center">
+                  <Leaf className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="font-poppins font-bold text-2xl mb-4 text-foreground">
+                  Growing With Two Languages
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Kids pick up things fast. A word here, a sound there. At Lelehua, we keep it simple. Our work ties small stories to big values—stories for a sustainable world that shape how children talk, play, and think. Perfect for families seeking bilingual Singapore paths that feel warm and real.
+                </p>
+              </CardContent>
+            </Card>
 
-      {/* Learning That Feels Like Home Section */}
-      <section className="py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-poppins font-bold text-4xl mb-6 text-foreground">
-              Learning That Feels Like Home
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Some kids learn in tiny steps. Some jump. Both are fine. We build tools that let them move in their own way. Words grow by use, not pressure. You will see this across our lessons. Kids get stories, sounds, and hands-on bits tied to Stories for a Sustainable World and easy home routines. This keeps bilingual Singapore families close to the process. Our bilingual programme sets calm patterns that match daily life. We shape bilingual education in Singapore to feel soft and honest.
-            </p>
-          </div>
-        </div>
-      </section>
+            {/* Card 2 */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-secondary/5 to-transparent">
+              <CardContent className="p-8">
+                <div className="w-14 h-14 mb-6 rounded-2xl bg-secondary/10 flex items-center justify-center">
+                  <HomeIcon className="w-7 h-7 text-secondary" />
+                </div>
+                <h3 className="font-poppins font-bold text-2xl mb-4 text-foreground">
+                  Learning That Feels Like Home
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Some kids learn in tiny steps. Some jump. Both are fine. We build tools that let them move in their own way. Words grow by use, not pressure. Kids get stories, sounds, and hands-on activities tied to easy home routines. Our bilingual programme sets calm patterns that match daily life.
+                </p>
+              </CardContent>
+            </Card>
 
-      {/* Small Voices, Big Care Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-poppins font-bold text-4xl mb-6 text-foreground">
-              Small Voices, Big Care
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              A child tests a word. Then tries it again. The habit builds. We guide that habit through kind stories and simple tasks. Parents stay part of it too. They get short notes, quick tips, and story cues. Many link back to Stories for a Sustainable World, which keeps ideas grounded. It helps bilingual Singapore families stay steady. Our bilingual programme grows at a child's own rhythm. This is bilingual education in Singapore made easy to follow.
-            </p>
+            {/* Card 3 */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-accent/5 to-transparent">
+              <CardContent className="p-8">
+                <div className="w-14 h-14 mb-6 rounded-2xl bg-accent/10 flex items-center justify-center">
+                  <MessageCircle className="w-7 h-7 text-accent" />
+                </div>
+                <h3 className="font-poppins font-bold text-2xl mb-4 text-foreground">
+                  Small Voices, Big Care
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  A child tests a word. Then tries it again. The habit builds. We guide that habit through kind stories and simple tasks. Parents stay part of it too—with short notes, quick tips, and story cues. Our bilingual programme grows at a child's own rhythm.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
