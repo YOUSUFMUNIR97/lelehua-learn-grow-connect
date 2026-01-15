@@ -103,50 +103,74 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Content Sections with Better Layout */}
-      <section className="py-24 bg-background">
+      {/* Welcome Section (Original) */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-poppins font-bold text-4xl mb-6 text-foreground">
+              Welcome to Lelehua
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Lelehua is more than a brand—it's a vibrant community dedicated to nurturing bilingual learning 
+              for children and families. We believe in the power of language to connect cultures, open minds, 
+              and create lasting bonds within our community.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: Bilingual Learning Philosophy Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="font-poppins font-bold text-3xl md:text-4xl text-foreground mb-4">
+              Our Approach to Bilingual Learning
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Stories for a sustainable world that shape how children talk, play, and think.
+            </p>
+          </div>
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-primary/5 to-transparent">
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-primary/5 to-background hover:-translate-y-1">
               <CardContent className="p-8">
                 <div className="w-14 h-14 mb-6 rounded-2xl bg-primary/10 flex items-center justify-center">
                   <Leaf className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="font-poppins font-bold text-2xl mb-4 text-foreground">
+                <h3 className="font-poppins font-bold text-xl mb-4 text-foreground">
                   Growing With Two Languages
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-sm">
                   Kids pick up things fast. A word here, a sound there. At Lelehua, we keep it simple. Our work ties small stories to big values—stories for a sustainable world that shape how children talk, play, and think. Perfect for families seeking bilingual Singapore paths that feel warm and real.
                 </p>
               </CardContent>
             </Card>
 
             {/* Card 2 */}
-            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-secondary/5 to-transparent">
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-secondary/5 to-background hover:-translate-y-1">
               <CardContent className="p-8">
                 <div className="w-14 h-14 mb-6 rounded-2xl bg-secondary/10 flex items-center justify-center">
                   <HomeIcon className="w-7 h-7 text-secondary" />
                 </div>
-                <h3 className="font-poppins font-bold text-2xl mb-4 text-foreground">
+                <h3 className="font-poppins font-bold text-xl mb-4 text-foreground">
                   Learning That Feels Like Home
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-sm">
                   Some kids learn in tiny steps. Some jump. Both are fine. We build tools that let them move in their own way. Words grow by use, not pressure. Kids get stories, sounds, and hands-on activities tied to easy home routines. Our bilingual programme sets calm patterns that match daily life.
                 </p>
               </CardContent>
             </Card>
 
             {/* Card 3 */}
-            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-accent/5 to-transparent">
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-accent/5 to-background hover:-translate-y-1">
               <CardContent className="p-8">
                 <div className="w-14 h-14 mb-6 rounded-2xl bg-accent/10 flex items-center justify-center">
                   <MessageCircle className="w-7 h-7 text-accent" />
                 </div>
-                <h3 className="font-poppins font-bold text-2xl mb-4 text-foreground">
+                <h3 className="font-poppins font-bold text-xl mb-4 text-foreground">
                   Small Voices, Big Care
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-sm">
                   A child tests a word. Then tries it again. The habit builds. We guide that habit through kind stories and simple tasks. Parents stay part of it too—with short notes, quick tips, and story cues. Our bilingual programme grows at a child's own rhythm.
                 </p>
               </CardContent>
@@ -155,7 +179,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Features Section (Original) */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -210,7 +234,25 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* NEW: Slow Steady Growth Section */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-primary/10 rounded-full">
+              <Sparkles className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-primary">A Place for Slow, Steady Growth</span>
+            </div>
+            <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-6 text-foreground">
+              Language Grows With Care
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Lelehua grows language with care, one tiny spark at a time, keeping families close and giving children room to bloom on their own terms. This is bilingual education in Singapore made easy to follow—soft, honest, and tailored to each child's rhythm.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section (Original) */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -223,10 +265,12 @@ const Home = () => {
             </div>
             <div>
               <h2 className="font-poppins font-bold text-4xl mb-6 text-foreground">
-                A Place for Slow, Steady Growth
+                Join Our Growing Community
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Lelehua grows language with care, one tiny spark at a time, keeping families close and giving children room to bloom on their own terms. Become part of a supportive network of families committed to bilingual education. Share experiences, access exclusive resources, and participate in enriching programs designed to help your children thrive in a multilingual world.
+                Become part of a supportive network of families committed to bilingual education. 
+                Share experiences, access exclusive resources, and participate in enriching programs 
+                designed to help your children thrive in a multilingual world.
               </p>
               <Link to="/join">
                 <Button size="lg" className="font-poppins font-semibold">
