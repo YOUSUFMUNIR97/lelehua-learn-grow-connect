@@ -1498,5 +1498,480 @@ export const stories: Story[] = [
       "Patience and care",
       "Collaboration and friendship"
     ]
+  },
+  {
+    slug: "the-solar-song",
+    title: {
+      chinese: "太阳之歌",
+      english: "The Solar Song"
+    },
+    excerpt: "Lelehua and Nina discover the power of solar energy and help Auntie Ma bring sunshine to their whole community.",
+    scenes: [
+      {
+        sceneNumber: 1,
+        chinese: {
+          heading: "场景一：阳光的惊喜",
+          content: [
+            `放学后，乐乐华和妮娜陪着马大妈一起到组屋的屋顶上。阳光在闪着光，几片亮晶晶的板子像在发光。`,
+            `妮娜："马大妈，那些亮亮的——是在晒衣服吗？"`,
+            `马大妈笑着说："不是，是太阳能板。它们正在用阳光发电呢。"`,
+            `乐乐华："哇…这也能有电？"`,
+            `马大妈点头："对啊，我们要安装新的太阳能板了。我还报名当义工队成员，要去帮忙装在我们社区的屋顶上。"`,
+            `妮娜："马大妈是太阳能队长！"`,
+            `马大妈大笑："队长不敢当，不过我会让阳光照亮更多家庭。"`
+          ]
+        },
+        english: {
+          heading: "Scene 1: A Sunlit Surprise",
+          content: [
+            `After school, Lelehua and Nina followed Auntie Ma up to the rooftop of their HDB block. Sunlight sparkled across several shiny panels that looked as if they were glowing.`,
+            `Nina: "Auntie Ma… are those for drying clothes?"`,
+            `Auntie Ma (laughing): "No, those are solar panels. They're using sunlight to make electricity."`,
+            `Lelehua: "Wow… that can make electricity?"`,
+            `Auntie Ma (nodding): "Yes! We're installing new solar panels soon. And I even signed up as a volunteer to help install them on our community rooftops."`,
+            `Nina: "Auntie Ma is the Solar Captain!"`,
+            `Auntie Ma (laughing loudly): "Captain sounds too big for me… but I'll definitely help bring more sunshine to every home."`
+          ]
+        }
+      },
+      {
+        sceneNumber: 2,
+        chinese: {
+          heading: "场景二：了解太阳能",
+          content: [
+            `第二天，在学校里，张老师宣布新的项目：《日常生活中的太阳能解决方案》`,
+            `放学后，马大妈在餐桌上铺出一张大大的"屋顶平面图"。`,
+            `马大妈："来，我们要看看太阳照哪边最多。太阳能板一定要放在最晒的位置。"`,
+            `妮娜拿着铅笔四处比划。乐乐华追着阳光的影子测角度。`,
+            `三个人像小小科学家一样合作，家庭学习变成了真实的社区工程。`
+          ]
+        },
+        english: {
+          heading: "Scene 2: Learning About Solar Energy",
+          content: [
+            `The next day at school, Mrs. Zhang announced a new project: "Solar Solutions in Everyday Life."`,
+            `After school, Auntie Ma rolled out a huge "rooftop layout map" on the dining table.`,
+            `Auntie Ma: "Let's see which side gets the most sun. Solar panels must be placed where the sunlight is strongest."`,
+            `Nina pointed around with her pencil, and Lelehua chased the sun's shadow angles across the floor.`,
+            `The three of them worked like little scientists. Learning at home had turned into a real community project.`
+          ]
+        }
+      },
+      {
+        sceneNumber: 3,
+        chinese: {
+          heading: "场景三：马大妈的太阳义工队",
+          content: [
+            `周六早上，社区屋顶上热闹极了。志愿者们抬面板、接电线、固定支架。`,
+            `林叔（邻居）："哎哟，马大妈还带了两位小工程师来！"`,
+            `马大妈："他们不止是工程师，还是灵感大师。"`,
+            `乐乐华帮忙贴标签，标记线路。妮娜拿着工具，一边递、一边记录。一切井井有条。`,
+            `社区派来的工程师安装完最后一块太阳能板时，阳光刚好以完美的角度照射下去——叮！一个绿灯亮了。`,
+            `乐乐华："亮了！太阳把它叫醒了！"`,
+            `马大妈温柔微笑："孩子，这只是开始。太阳每天都在帮我们。"`
+          ]
+        },
+        english: {
+          heading: "Scene 3: Auntie Ma's Solar Volunteer Team",
+          content: [
+            `Saturday morning, the rooftop was buzzing with activity. Volunteers lifted panels, connected cables, and tightened brackets.`,
+            `Uncle Lim (neighbor): "Wah, Auntie Ma even brought two little engineers!"`,
+            `Auntie Ma: "They're not just engineers — they're inspiration experts."`,
+            `Lelehua helped label the wiring routes. Nina handed tools while jotting notes. Everything ran smoothly.`,
+            `When the community engineers placed the final panel, the sunlight hit it at a perfect angle— Ding! A small green light blinked on.`,
+            `Lelehua: "It's on! The sun woke it up!"`,
+            `Auntie Ma (smiling gently): "Children, this is just the beginning. The sun helps us every single day."`
+          ]
+        }
+      },
+      {
+        sceneNumber: 4,
+        chinese: {
+          heading: "场景四：《太阳之歌》首唱",
+          content: [
+            `学校举行"可再生能源周"展示会。乐乐华和妮娜决定带上自己做的小太阳能音箱。`,
+            `当阳光透过礼堂窗户照进来时，音箱突然亮了。`,
+            `孩子们兴奋地叫起来："太阳给音箱充电了！"`,
+            `妮娜举起麦克风，说："这是我们为太阳写的歌！"`,
+            `他们唱起——`,
+            `礼堂响起热烈的掌声。`,
+            `张老师宣布："我们学校下个月，也会加入马大妈的社区太阳能计划！"`,
+            `妮娜笑着小声说："马大妈是太阳超人。"`,
+            `乐乐华点头："她帮整个社区点亮了阳光。"`
+          ],
+          lyrics: [
+            "清晨阳光洒满天，金色铺在屋顶前。",
+            "每束光都是礼物，点亮心房暖人间。",
+            "阳光灿烂不收费，照亮世界不停歇。",
+            "太阳高照多明亮，光能化作我们的歌声飘荡。",
+            "清洁力量，温暖光芒，太阳点亮每一天的希望！",
+            "爬上屋顶视野开，工友邻里并肩来。",
+            "一块块板排成排，把整片阳光都装载。",
+            "螺丝一拧亮光亮，绿色小灯闪着光！",
+            "看！太阳在帮我们搞定啦！阳光能量属于你我一起！",
+            "不用电线，不起烟尘，只有天空的光暖洋洋。",
+            "选择干净能源更明亮，未来就在我们心上。"
+          ]
+        },
+        english: {
+          heading: "Scene 4: The Debut of The Solar Song",
+          content: [
+            `The school held a showcase for Renewable Energy Week. Lelehua and Nina brought along their homemade solar-powered speaker.`,
+            `When sunlight streamed through the hall windows, the little speaker suddenly lit up.`,
+            `Children shouted excitedly: "The sun is charging the speaker!"`,
+            `Nina raised the microphone. "This is a song we wrote for the sun!"`,
+            `They began to sing—`,
+            `When they finished, the hall erupted in applause.`,
+            `Mrs. Zhang announced: "Next month, our school will also join Auntie Ma's community solar program!"`,
+            `Nina whispered, giggling: "Auntie Ma is a solar superhero."`,
+            `Lelehua nodded: "She's bringing sunshine to the whole community."`
+          ],
+          lyrics: [
+            "Morning sunlight fills the sky, golden beams touch rooftops high.",
+            "Every ray's a precious gift, warming hearts and giving lift.",
+            "Sunshine bright and free to share, shining on without a care.",
+            "The sun above shines strong and long, turning light into our joyful song.",
+            "Clean and gentle, warm and bright, the sun brings hope to every day and night!",
+            "Up on rooftops wide and clear, neighbors, workers gather near.",
+            "Panel rows in tidy lines, catching all the sun that shines.",
+            "One twist of a bolt—the light turns on, a tiny green glow, shining strong!",
+            "Look! The sun is helping us today! Its power belongs to all of us—hurray!",
+            "No wires needed, no smoke at all, just warm sunlight for big and small.",
+            "Choosing clean energy makes our future bright, a better tomorrow in our sight."
+          ]
+        }
+      },
+      {
+        sceneNumber: 5,
+        chinese: {
+          heading: "场景五：分享太阳能站",
+          content: [
+            `周末，三人在组屋楼下搭起了一个"太阳能学习站"。`,
+            `牌子写着：《体验太阳的力量》《太阳能，不用插电！》`,
+            `孩子们把玩具、小风扇、小音箱放到小太阳能板上——阳光一照，它们就动起来、唱起来。`,
+            `谢阿姨（惊讶）："哎哟，我不知道光靠太阳就能这么厉害！"`,
+            `马大妈："太阳能是给下一代的礼物，越多人懂，地球就越轻松。"`,
+            `妮娜拍拍太阳能音箱："看！太阳又在帮我们唱歌了！"`,
+            `乐乐华补充："而且现在，我们整个组屋的屋顶都在发电哦。"`,
+            `所有人都鼓掌。`
+          ]
+        },
+        english: {
+          heading: "Scene 5: Sharing the Solar Station",
+          content: [
+            `That weekend, the three of them set up a Solar Learning Booth downstairs.`,
+            `Their signs read: "Experience the Power of the Sun!" and "Solar Energy — No Plug Needed!"`,
+            `Kids placed toys, fans, and speakers onto little solar panels— Sunlight touched them, and they moved, spun, or began to sing.`,
+            `Aunty Siew (amazed): "Wah! I didn't know sunlight alone could do all this!"`,
+            `Auntie Ma: "Solar energy is a gift for the next generation. The more people understand it, the kinder we are to Earth."`,
+            `Nina tapped the solar speaker: "Look! The sun is singing again!"`,
+            `Lelehua added: "And now, our whole block is powering itself from the rooftop."`,
+            `Everyone clapped.`
+          ]
+        }
+      },
+      {
+        sceneNumber: 6,
+        chinese: {
+          heading: "场景六：来自太阳的启示",
+          content: [
+            `傍晚，他们来到屋顶花园。新安装的太阳能板像一片深蓝色的海，静静吸着余晖。`,
+            `天空被太阳染成柔和的橘色。`,
+            `妮娜："太阳每天都在唱歌，我们今天只是让它变大声一点。"`,
+            `马大妈（轻声）："你们两个今天做的，比你们想的更重要。用智慧帮助世界，是最大的力量。"`,
+            `乐乐华抬头，看着天边的亮光："诺亚爸爸…太阳像音乐一样，到处都有。只要我们看见它、用好它，就能让世界更美好。"`,
+            `太阳缓缓落下——像今天的努力，被温柔地接住。`
+          ]
+        },
+        english: {
+          heading: "Scene 6: Lessons from the Sun",
+          content: [
+            `At sunset, they returned to the rooftop garden. The newly installed solar panels looked like a deep blue sea, quietly drinking in the last rays.`,
+            `The sky glowed softly in warm orange.`,
+            `Nina: "The sun sings every day. We just helped make it louder today."`,
+            `Auntie Ma (gently): "What you two did today is more important than you know. Using your smarts to help the world — that's real power."`,
+            `Lelehua looked up at the fading light: "Papa Noa… the sun is like music. It's everywhere. When we learn to see it — and use it well — we can make the world better."`,
+            `The sun slowly set— as if gently holding all the day's hard work.`
+          ]
+        }
+      }
+    ],
+    themes: [
+      "Solar energy and renewable power",
+      "Community collaboration and volunteering",
+      "Intergenerational learning",
+      "Clean energy advocacy through creativity"
+    ],
+    discussionPrompts: [
+      "Why do you think Auntie Ma volunteered to help install solar panels on the rooftops?",
+      "What did Lelehua and Nina learn when they tracked sunlight at home?",
+      "How did the community work together to support the solar installation?",
+      "How might using solar panels help reduce pollution?"
+    ],
+    takeaways: [
+      "Solar energy is a clean, renewable resource available to everyone",
+      "Community efforts multiply the impact of sustainable actions",
+      "Children can be powerful advocates for clean energy",
+      "Small actions like learning about solar power can inspire big changes"
+    ],
+    coreValues: [
+      "Environmental stewardship",
+      "Community service and volunteering",
+      "Creativity in advocacy",
+      "Hope and optimism"
+    ]
+  },
+  {
+    slug: "the-city-symphony",
+    title: {
+      chinese: "城市交响曲",
+      english: "The City Symphony"
+    },
+    excerpt: "Lelehua and Nina bring together all their sustainability lessons into one magnificent performance—a symphony celebrating their sustainable Singapore.",
+    scenes: [
+      {
+        sceneNumber: 1,
+        chinese: {
+          heading: "场景一：一张海报与一阵风",
+          content: [
+            `午后，一阵风从厨房窗口轻轻吹进来，把马大妈手中的报纸角吹得微微跳动。`,
+            `乐乐华正在水槽里冲洗可回收的玻璃瓶。玄关突然传来开门声。`,
+            `"我回来咯！" 妮娜边换鞋边说，"楼下信箱今天超级满！"`,
+            `她跑进厨房，手里拿着一叠信和一张对折的绿色海报。`,
+            `海报最上方写着：滨海堤坝社区绿色嘉年华 Our City, Our Planet`,
+            `封面上，是他们熟悉的画面——屋顶花园、脚踏车、河流、太阳能板、孩子的笑容。`,
+            `马大妈凑过来看看："吼，这不就是你们一整年的活动吗？全部印在一张纸上。"`,
+            `妮娜读着海报，越读越兴奋："学校、居民委员会、社区团体都可以参加！有水、食物、能源、交通、生物多样性……还有学生舞台表演！"`,
+            `他们异口同声地说："社区绿色嘉年华！"`
+          ]
+        },
+        english: {
+          heading: "Scene 1 — A Poster and a Breeze",
+          content: [
+            `The afternoon breeze slipped in through the kitchen window, fluttering the edges of Auntie Ma's newspaper.`,
+            `Lelehua was rinsing recycled jars in the sink when the front door opened.`,
+            `"I'm back!" Nina called, kicking off her shoes. "The letterbox downstairs was PACKED today!"`,
+            `She came in holding a small stack of letters and one bright green folded brochure.`,
+            `On the top of the brochure were the words: Marina Barrage Community Green Festival — Our City, Our Planet`,
+            `The cover showed rooftop gardens, bicycles, rivers, solar panels, and children smiling under the sun.`,
+            `Auntie Ma leaned over. "Wah, this one look exactly like your whole year of projects?"`,
+            `Nina skimmed the text quickly. "It says schools, residents' committees, and community groups can all join. Got water booths, food booths, energy, transport, biodiversity… and a stage for performances!"`,
+            `They said it together: "Community Green Festival!"`
+          ]
+        }
+      },
+      {
+        sceneNumber: 2,
+        chinese: {
+          heading: "场景二：策划城市的大绿日",
+          content: [
+            `过没几天，邻里到处贴上新的海报："滨海堤坝绿色嘉年华：我们的城市，我们的地球。"`,
+            `课室里，张老师拍了拍手。`,
+            `"这次嘉年华，是我们学校展示成果的好机会。你们来说说，我们要如何呈现我们学习到的'可持续城市故事'？"`,
+            `手举得像森林一样高——"屋顶花园！""漂浮农场！""回收乐队！""脚踏交响曲！""丑蔬菜！""会记住的河流！""太阳之歌！"`,
+            `张老师笑道："很好！不过舞台只有一个名额。"`,
+            `全班顿时安静。`,
+            `妮娜举起手，慢慢说："那……如果不是'一个故事'呢？如果是一个大故事，把我们的所有故事放进去？像……一首大歌？"`,
+            `所有目光转向乐乐华。他吸了一口气，感觉阳光落在他的肩上。`,
+            `"我觉得可以。"他说。"我们可以创作一首——城市交响曲。把我们学到的一切，都放进去。"`,
+            `张老师在白板上写下：《城市交响曲——我们的永续新加坡》`,
+            `"乐乐华，你负责音乐。妮娜，你负责脚本和视觉。"`,
+            `这一次，乐乐华没有说"我试试看"，而是说："我会做到。"`
+          ]
+        },
+        english: {
+          heading: "Scene 2 — Planning the City's Big Green Day",
+          content: [
+            `Posters soon appeared all around the neighbourhood: "Marina Barrage Green Festival: Our City, Our Planet."`,
+            `In class, Mrs. Zhang clapped her hands.`,
+            `"This is our chance to showcase what we've been learning all year. Tell me — how should we share our story of a sustainable city?"`,
+            `Hands shot up: "Rooftop gardens!" "Floating farms!" "Recycling music band!" "Pedal Power Symphony!" "Ugly vegetables!" "The river that remembered!" "The Solar Song!"`,
+            `Mrs. Zhang laughed. "Good! But the festival stage only gives us one performance slot."`,
+            `The class fell silent.`,
+            `Nina slowly raised her hand. "What if… it's not just one story? What if it's one big song… with many stories inside?"`,
+            `Everyone looked at Lelehua. He felt their attention like warm sunlight.`,
+            `"I… I think we can do that," he said. "A city symphony — made from everything we've learned."`,
+            `Mrs. Zhang wrote on the board: The City Symphony — Our Sustainable Singapore`,
+            `"Lelehua, you lead the music team. Nina, script and visuals."`,
+            `This time, Lelehua didn't say "I'll try." He said— "I'll do it."`
+          ]
+        }
+      },
+      {
+        sceneNumber: 3,
+        chinese: {
+          heading: "场景三：城市的声音采集行动",
+          content: [
+            `两周内，他们的笔记本成了"声音捕手"。`,
+            `放学后，他们走遍城市——`,
+            `屋顶花园：马大妈在浇香草。水滴落在叶子上：滴……答……滴……答…… "这是水的节奏。"乐乐华轻声记下。`,
+            `公园连道：脚踏车"叮铃叮铃"掠过，踏板声像城市的心跳。`,
+            `河岸边：河水绕着石头低语，鸟鸣在上空飘荡。`,
+            `漂浮农场与菜市场："丑蔬菜"在"零浪费摊位"里笑得很真诚，像在说："我们也好吃。"`,
+            `城市里到处都有人做着小小的行动：自带饭盒、分类回收、关灯节能、踩脚踏车、跟邻居分享节能灯泡建议。`,
+            `夜晚，乐乐华坐在窗边，手里拿着尤克里里，笔记本上写着：《城市交响曲》`,
+            `他哼着，把城市的声音织成一首歌。`,
+            `有时，他停下来，仿佛听见诺亚在夜风里唱歌的声音。"诺亚爸爸……你听得见吗？"他轻轻说。`
+          ]
+        },
+        english: {
+          heading: "Scene 3 — Collecting the Sounds of a City",
+          content: [
+            `For two weeks, their notebooks became sound recorders.`,
+            `They walked through familiar places:`,
+            `Rooftop garden: Water dripping on leaves: drip…drop…drip…drop… "This is the rhythm of water," Lelehua noted quietly.`,
+            `Park connector: Cyclists speeding past: ring-ring, pedal-pedal… like the city's heartbeat.`,
+            `Riverbank: Water murmuring around stones. Birds echoing overhead.`,
+            `Floating farm and wet market: "Ugly vegetables" smiling from crates at the "No Food Waste" stall.`,
+            `Everywhere they went, people were doing small things: Reducing waste, sorting recycling, riding bicycles, turning off unused lights, bringing reusable containers.`,
+            `At night, Lelehua sat by the window with his ukulele. On his notebook cover were the words: "The City Symphony"`,
+            `He hummed, trying to weave the city's tiny sounds into one melody.`,
+            `Sometimes he paused, remembering Papa Noa's rough voice singing under the night sky. "Do you hear this?" he whispered to the rooftops.`
+          ]
+        }
+      },
+      {
+        sceneNumber: 4,
+        chinese: {
+          heading: "场景四：滨海堤坝的绿色嘉年华",
+          content: [
+            `那天早晨，风亮得像新洗过的天空。`,
+            `白色帐篷在草地上排成一行，里面有：天空花园（屋顶种植）、宝藏在垃圾里（回收手作）、漂浮食物（水产种植）、倾听的雨（雨水模型）、河流的记忆（生态修复）、脚踏力量（踩脚踏车点灯）、日光站（太阳能展示）`,
+            `空气里有青草味、海风味，还有小吃摊的香味。`,
+            `妮娜深呼吸："这里本身就是一首歌。"`,
+            `马大妈穿着橙色"太阳大使"马甲走来。"准备好了吗，指挥家？"`,
+            `乐乐华轻轻点头："准备好了。"`
+          ]
+        },
+        english: {
+          heading: "Scene 4 — The Festival at Marina Barrage",
+          content: [
+            `On festival day, Marina Barrage was bright and windy.`,
+            `White tents dotted the grass like small clouds. There were booths about: Rooftop gardens, Recycling treasures, Floating farms, Rainwater, River restoration, Pedal power, Solar energy.`,
+            `The air smelled of grass, sea breeze, and food stalls.`,
+            `Nina whispered, "This place already feels like a song."`,
+            `Auntie Ma, wearing her orange "Solar Ambassador" vest, grinned. "How, conductor? Ready?"`,
+            `Lelehua nodded. "Ready."`
+          ]
+        }
+      },
+      {
+        sceneNumber: 5,
+        chinese: {
+          heading: "场景五：城市交响曲",
+          content: [
+            `主持人的声音在草地上响起："现在请欢迎爱加倍中学带来的原创作品——《城市交响曲》！"`,
+            `舞台上：回收乐器打击组、尤克里里与吉他组、沙铃与直笛组、脚踏打击手、手拿麦克风的妮娜、以及站在中央、握着尤克里里的乐乐华。`,
+            `台下，他看到：张老师。穿着马甲、兴奋挥手的马大妈。附近的邻居们。`,
+            `他深吸一口气。`,
+            `"大家好，"他对着麦克风说。"这不是我的歌，是我们的。我们收集了城市的声音：花园、水、脚踏车、雨、市场、屋顶……希望你们能听见——在唱歌的新加坡。"`,
+            `第一声和弦响起。雨滴般的打击乐，脚踏车灯亮起，沙铃像叶子在风里沙沙作响。`,
+            `然后，他们开始唱。`,
+            `当最后一个和弦落下，全场安静一秒。`,
+            `然后——整片草地响起热烈的掌声。`,
+            `妮娜笑着喘气："我们做到了，指挥家！"`
+          ],
+          lyrics: [
+            "屋顶花园在生长，牛奶罐闪着梦想光。",
+            "小小手护小树苗，城市未来正起航。",
+            "沿着河流故事长，遗忘水波也闪亮。",
+            "雨点轻吻泥土香，滴滴都是自然唱。",
+            "脚踏车铃叮当响，旧物新生变希望。",
+            "太阳收起白昼光，化作能量心中藏。",
+            "这是城市交响曲，每颗心都是旋律。",
+            "小小城市大梦想，我们并肩同前行。",
+            "希望不靠黄金路，靠你我小小行动。",
+            "微光也能照城墙，温暖最冷的地方。"
+          ]
+        },
+        english: {
+          heading: "Scene 5 — The City Symphony (Performance)",
+          content: [
+            `"Next, we have Agape Secondary School presenting an original piece — The City Symphony!"`,
+            `They stepped onto the stage. Behind them: a hand-drawn Singapore skyline. Onstage: Recycled percussion, Ukuleles and guitars, Recorders and shakers, A bicycle-percussionist, Nina with the script, Lelehua in the center, ukulele in hand.`,
+            `He looked out: Mrs. Zhang. Auntie Ma waving both arms. Neighbours smiling.`,
+            `He inhaled.`,
+            `"Hi everyone… this song isn't mine. It's ours. We collected the sounds of our gardens, our rivers, our bicycles, our rain, our markets, our rooftops. We hope you can hear our Singapore… singing."`,
+            `The first chord rang out. Soft tapping like water. Bike-powered light glowing. Shakers rustling like leaves.`,
+            `Then they sang.`,
+            `The final chord faded. For a heartbeat, silence.`,
+            `Then— The entire lawn erupted in applause.`,
+            `Nina laughed breathlessly. "We did it, conductor!"`
+          ],
+          lyrics: [
+            "On the rooftops, gardens grow, milk-carton dreams in sunlight glow.",
+            "Hands in soil, we learn to be guardians of each tiny tree.",
+            "By the rivers, stories flow, forgotten waters heal and glow.",
+            "Rain taps softly on the ground, every drop a gentle sound.",
+            "This is our city symphony, every heart a melody.",
+            "Small hands, small streets, but hopes so wide, side by side, side by side.",
+            "Pedals turning, wheels that sing, quiet roads where children grin.",
+            "Broken things we choose to mend, giving old things life again.",
+            "On the rooftops, silent beams, solar panels catch our dreams.",
+            "With a bit of love and some sunlight free, we can light a whole city."
+          ]
+        }
+      },
+      {
+        sceneNumber: 6,
+        chinese: {
+          heading: "场景六：屋顶上的约定",
+          content: [
+            `当天晚上，城市变得安静。三人慢慢走上组屋的屋顶。`,
+            `太阳能板在夕阳里微微闪着光。`,
+            `妮娜躺在长椅上："今天感觉像整座城市一起唱歌。"`,
+            `马大妈坐下，说："你们今天啊，不只是会科学。你们是用心。"`,
+            `乐乐华抱着尤克里里："马大妈……你觉得，一首歌真的能改变什么吗？"`,
+            `马大妈摇摇头，又点点头。"一首歌，不能改变世界。但一首歌可以改变一个人。一个人会做一个小行动。那个行动又会影响另一个人。改变就是这样走的——慢慢走，但一定走。"`,
+            `妮娜翻身坐起："而且我们还没结束！还有屋顶花园、河流之旅、脚踏路线、堆肥桶、还有好多新歌要写！"`,
+            `乐乐华望向城市灯火。他轻轻说："我以前以为……自己没有位置。但现在我知道——希望不需要大土地。只需要一点点地方，和一点点爱。"`,
+            `他站起身，看着夜空："我想继续写歌。继续种。继续分享。让更多孩子知道——小小的人，也能成为大地的守护者。"`,
+            `马大妈拥抱两个孩子："好，因为这座城市，还有很多歌等着你们写。"`,
+            `微风吹过，城市低声歌唱：一点点地方，一点点爱，希望在生长。`,
+            `城市交响曲继续奏响。而一个名叫乐乐华的男孩，正在悄悄展开大地守护者的下一章节。`
+          ]
+        },
+        english: {
+          heading: "Scene 6 — A Promise on the Rooftop",
+          content: [
+            `That night, the city was calm. Lelehua, Nina, and Auntie Ma went up to the rooftop. Solar panels glimmered faintly in the last light.`,
+            `"Today felt like the whole city singing," Nina said.`,
+            `Auntie Ma nodded. "You two didn't just use science. You used your hearts."`,
+            `Lelehua held his ukulele. "Do you think one performance can make a difference?"`,
+            `Auntie Ma smiled gently. "One song wakes one heart. One heart takes one small action. One action touches another person. Change walks slowly… but it walks."`,
+            `Nina sat up. "And we're not stopping! Rooftop garden, river trips, cycling routes, compost bucket, new songs…"`,
+            `Lelehua looked out across the city lights. "Papa Noa… I used to think I had no place. Now I know — hope doesn't need big land. Just a little space. And love."`,
+            `He turned back, eyes bright. "I want to keep going. More songs. More gardens. More rivers. I want other kids to feel what I felt today—that small people can be Earth Keepers."`,
+            `Auntie Ma pulled them both into a hug. "Good. This city still has many songs left to write."`,
+            `The wind hummed through the rooftop garden. A small space. A little love. A growing hope.`,
+            `And the city symphony played on.`
+          ]
+        }
+      }
+    ],
+    themes: [
+      "Integration of sustainability lessons",
+      "Community celebration and performance",
+      "Music and art as advocacy tools",
+      "Hope and collective action"
+    ],
+    discussionPrompts: [
+      "How did Lelehua and Nina bring together all their sustainability lessons into one performance?",
+      "Why is music a powerful way to share environmental messages?",
+      "What does Auntie Ma mean when she says 'Change walks slowly… but it walks'?",
+      "How can you use your talents to help the environment?"
+    ],
+    takeaways: [
+      "Individual sustainability actions connect to form a larger movement",
+      "Creative expression amplifies environmental messages",
+      "Small people can make big differences as Earth Keepers",
+      "Hope grows from small spaces and acts of love"
+    ],
+    coreValues: [
+      "Integration and holistic thinking",
+      "Creative expression",
+      "Community and collaboration",
+      "Hope and perseverance"
+    ]
   }
 ];
