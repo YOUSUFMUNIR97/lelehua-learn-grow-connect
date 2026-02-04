@@ -92,9 +92,9 @@ const Stories = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {stories.map((story) => (
-                <Link key={story.slug} to={`/stories/${story.slug}`}>
-                  <Card className="h-full hover:shadow-xl transition-shadow cursor-pointer border-primary/10">
-                    <CardContent className="p-6">
+                <Link key={story.slug} to={`/stories/${story.slug}`} className="block h-full">
+                  <Card className="h-full hover:shadow-xl transition-shadow cursor-pointer border-primary/10 flex flex-col">
+                    <CardContent className="p-6 flex flex-col flex-grow">
                       <h3 className="font-poppins font-bold text-2xl mb-2 text-foreground">
                         {story.title.english}
                       </h3>
@@ -124,7 +124,9 @@ const Stories = () => {
                         </div>
                       </div>
                       
-                      <Button className="w-full">Read Story</Button>
+                      <div className="mt-auto">
+                        <Button className="w-full">Read Story</Button>
+                      </div>
                     </CardContent>
                   </Card>
                 </Link>
