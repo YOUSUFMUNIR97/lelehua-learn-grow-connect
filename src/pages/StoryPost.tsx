@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { stories, prologue } from "@/data/stories";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Languages } from "lucide-react";
+import { ArrowLeft, Languages, Music } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const StoryPost = () => {
@@ -37,6 +37,23 @@ const StoryPost = () => {
                   {language === "english" ? "中文" : "English"}
                 </Button>
               </div>
+
+              {prologue.audioUrl && (
+                <Card className="bg-primary/5 border-primary/20 mb-6">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Music className="h-5 w-5 text-primary" />
+                      <h3 className="font-poppins font-semibold text-lg">
+                        {language === "english" ? "Listen to the Song" : "听歌曲"}
+                      </h3>
+                    </div>
+                    <audio controls className="w-full" preload="metadata">
+                      <source src={prologue.audioUrl} type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </CardContent>
+                </Card>
+              )}
             </div>
           </div>
         </section>
@@ -125,6 +142,23 @@ const StoryPost = () => {
             </div>
 
             <p className="text-lg text-foreground italic">{story.excerpt}</p>
+
+            {story.audioUrl && (
+              <Card className="bg-primary/5 border-primary/20 mt-6">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Music className="h-5 w-5 text-primary" />
+                    <h3 className="font-poppins font-semibold text-lg">
+                      {language === "english" ? "Listen to the Story Song" : "听故事歌曲"}
+                    </h3>
+                  </div>
+                  <audio controls className="w-full" preload="metadata">
+                    <source src={story.audioUrl} type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                  </audio>
+                </CardContent>
+              </Card>
+            )}
           </div>
         </div>
       </section>

@@ -5,6 +5,7 @@ export interface Story {
     english: string;
   };
   excerpt: string;
+  audioUrl?: string;
   scenes: Array<{
     sceneNumber: number;
     chinese: {
@@ -25,6 +26,7 @@ export interface Story {
 }
 
 export const prologue = {
+  audioUrl: "/audio/song-01-introduction.mp3",
   chinese: {
     title: "序章: 乐乐华的人生旅程",
     content: [
@@ -133,6 +135,7 @@ export const bookOverview = {
 export const stories: Story[] = [
   {
     slug: "the-garden-in-the-sky",
+    audioUrl: "/audio/song-02-story-1.mp3",
     title: {
       chinese: "天空花园",
       english: "The Garden in the Sky"
@@ -306,6 +309,7 @@ export const stories: Story[] = [
   },
   {
     slug: "pedal-power-symphony",
+    audioUrl: "/audio/song-03-story-2.mp3",
     title: {
       chinese: "脚踏交响曲",
       english: "Pedal Power Symphony"
@@ -473,6 +477,7 @@ export const stories: Story[] = [
   },
   {
     slug: "treasure-in-the-trash",
+    audioUrl: "/audio/song-04-story-3.mp3",
     title: {
       chinese: "垃圾里的宝藏",
       english: "The Treasure in the Trash"
@@ -654,6 +659,7 @@ export const stories: Story[] = [
   },
   {
     slug: "the-rain-that-listens",
+    audioUrl: "/audio/song-05-story-4.mp3",
     title: {
       chinese: "倾听的雨",
       english: "The Rain That Listens"
