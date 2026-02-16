@@ -852,6 +852,7 @@ export const stories: Story[] = [
   },
   {
     slug: "the-river-that-remembered",
+    audioUrl: "/audio/song-06-story-5.mp3",
     title: {
       chinese: "会记住的河流",
       english: "The River That Remembered"
@@ -1015,6 +1016,7 @@ export const stories: Story[] = [
   },
   {
     slug: "the-ugly-vegetables",
+    audioUrl: "/audio/song-07-story-6.mp3",
     title: {
       chinese: "丑蔬菜也有春天",
       english: "The Ugly Vegetables"
@@ -1178,6 +1180,7 @@ export const stories: Story[] = [
   },
   {
     slug: "the-floating-garden",
+    audioUrl: "/audio/song-08-story-7.mp3",
     title: {
       chinese: "漂浮花园",
       english: "The Floating Garden"
@@ -1329,6 +1332,7 @@ export const stories: Story[] = [
   },
   {
     slug: "the-compost-symphony",
+    audioUrl: "/audio/song-09-story-8.mp3",
     title: {
       chinese: "堆肥交响曲",
       english: "The Compost Symphony"
@@ -1507,6 +1511,7 @@ export const stories: Story[] = [
   },
   {
     slug: "the-solar-song",
+    audioUrl: "/audio/song-10-story-9.mp3",
     title: {
       chinese: "太阳之歌",
       english: "The Solar Song"
