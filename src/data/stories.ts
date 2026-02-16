@@ -1734,6 +1734,7 @@ export const stories: Story[] = [
   },
   {
     slug: "the-city-symphony",
+    audioUrl: "/audio/song-11-story-10.mp3",
     title: {
       chinese: "城市交响曲",
       english: "The City Symphony"
