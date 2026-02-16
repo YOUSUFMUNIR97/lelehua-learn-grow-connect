@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { stories, prologue } from "@/data/stories";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Languages, Music } from "lucide-react";
+import { ArrowLeft, Languages, Music, FileText } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const StoryPost = () => {
@@ -51,6 +51,15 @@ const StoryPost = () => {
                       <source src={prologue.audioUrl} type="audio/mpeg" />
                       Your browser does not support the audio element.
                     </audio>
+                    <a
+                      href={`/licenses/song-01-license.pdf`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-3 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <FileText className="h-4 w-4" />
+                      {language === "english" ? "View Song License" : "查看歌曲许可证"}
+                    </a>
                   </CardContent>
                 </Card>
               )}
@@ -156,6 +165,15 @@ const StoryPost = () => {
                     <source src={story.audioUrl} type="audio/mpeg" />
                     Your browser does not support the audio element.
                   </audio>
+                  <a
+                    href={story.audioUrl.replace("/audio/", "/licenses/").replace(/\.mp3$/, "-license.pdf").replace(/-story-\d+/, "")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 mt-3 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <FileText className="h-4 w-4" />
+                    {language === "english" ? "View Song License" : "查看歌曲许可证"}
+                  </a>
                 </CardContent>
               </Card>
             )}
