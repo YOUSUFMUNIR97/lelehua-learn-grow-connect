@@ -20,27 +20,50 @@ const Join = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Here you would typically send the data to your backend
-    console.log("Form submitted:", formData);
-    
-    toast({
-      title: "Welcome to Lelehua!",
-      description: "Thank you for joining our community. We'll be in touch soon with next steps.",
-    });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-    // Reset form
-    setFormData({
-      parentName: "",
-      email: "",
-      phone: "",
-      childName: "",
-      childAge: "",
-      languages: "",
-      message: ""
-    });
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mqegzzdd", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          parentName: formData.parentName,
+          email: formData.email,
+          phone: formData.phone,
+          childName: formData.childName,
+          childAge: formData.childAge,
+          languages: formData.languages,
+          message: formData.message,
+          _formType: "join",
+        }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Welcome to Lelehua!",
+          description: "Thank you for joining our community. We'll be in touch soon with next steps.",
+        });
+        setFormData({ parentName: "", email: "", phone: "", childName: "", childAge: "", languages: "", message: "" });
+      } else {
+        toast({
+          title: "Error",
+          description: "Something went wrong. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
