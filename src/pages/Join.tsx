@@ -210,8 +210,8 @@ const Join = () => {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full font-poppins font-semibold">
-                    Join Lelehua
+                  <Button type="submit" className="w-full font-poppins font-semibold" disabled={isSubmitting}>
+                    {isSubmitting ? "Submitting..." : "Join Lelehua"}
                   </Button>
                 </form>
               </CardContent>

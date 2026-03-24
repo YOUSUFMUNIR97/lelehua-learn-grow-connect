@@ -252,8 +252,8 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full font-poppins font-semibold">
-                    Send Message
+                  <Button type="submit" className="w-full font-poppins font-semibold" disabled={isSubmitting}>
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
