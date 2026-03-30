@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle2 } from "lucide-react";
 import SEO from "@/components/SEO";
+import { supabase } from "@/integrations/supabase/client";
 
 const Join = () => {
   const { toast } = useToast();
@@ -43,9 +44,30 @@ const Join = () => {
       });
 
       if (response.ok) {
+        // Send confirmation email via Resend
+        try {
+          await supabase.functions.invoke("send-email", {
+            body: {
+              formType: "join",
+              userEmail: formData.email,
+              userName: formData.parentName,
+              formData: {
+                parentName: formData.parentName,
+                phone: formData.phone,
+                childName: formData.childName,
+                childAge: formData.childAge,
+                languages: formData.languages,
+                message: formData.message,
+              },
+            },
+          });
+        } catch (emailError) {
+          console.error("Email sending failed:", emailError);
+        }
+
         toast({
           title: "Welcome to Lelehua!",
-          description: "Thank you for joining our community. We'll be in touch soon with next steps.",
+          description: "Thank you for joining our community. A confirmation email has been sent.",
         });
         setFormData({ parentName: "", email: "", phone: "", childName: "", childAge: "", languages: "", message: "" });
       } else {
