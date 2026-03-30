@@ -28,43 +28,23 @@ const Join = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://formspree.io/f/mqegzzdd", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          parentName: formData.parentName,
-          email: formData.email,
-          phone: formData.phone,
-          childName: formData.childName,
-          childAge: formData.childAge,
-          languages: formData.languages,
-          message: formData.message,
-          _formType: "join",
-        }),
+      const { error } = await supabase.functions.invoke("send-email", {
+        body: {
+          formType: "join",
+          userEmail: formData.email,
+          userName: formData.parentName,
+          formData: {
+            parentName: formData.parentName,
+            phone: formData.phone,
+            childName: formData.childName,
+            childAge: formData.childAge,
+            languages: formData.languages,
+            message: formData.message,
+          },
+        },
       });
 
-      if (response.ok) {
-        // Send confirmation email via Resend
-        try {
-          await supabase.functions.invoke("send-email", {
-            body: {
-              formType: "join",
-              userEmail: formData.email,
-              userName: formData.parentName,
-              formData: {
-                parentName: formData.parentName,
-                phone: formData.phone,
-                childName: formData.childName,
-                childAge: formData.childAge,
-                languages: formData.languages,
-                message: formData.message,
-              },
-            },
-          });
-        } catch (emailError) {
-          console.error("Email sending failed:", emailError);
-        }
-
+      if (!error) {
         toast({
           title: "Welcome to Lelehua!",
           description: "Thank you for joining our community. A confirmation email has been sent.",
