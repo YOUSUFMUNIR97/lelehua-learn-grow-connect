@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, MapPin, Phone, Instagram, Youtube, Facebook, Music } from "lucide-react";
 import SEO from "@/components/SEO";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -37,9 +38,27 @@ const Contact = () => {
       });
 
       if (response.ok) {
+        // Send confirmation email via Resend
+        try {
+          await supabase.functions.invoke("send-email", {
+            body: {
+              formType: "contact",
+              userEmail: formData.email,
+              userName: formData.name,
+              formData: {
+                name: formData.name,
+                subject: formData.subject,
+                message: formData.message,
+              },
+            },
+          });
+        } catch (emailError) {
+          console.error("Email sending failed:", emailError);
+        }
+
         toast({
           title: "Message Sent!",
-          description: "Thank you for reaching out. We'll get back to you within 24-48 hours.",
+          description: "Thank you for reaching out. We'll get back to you within 24-48 hours. A confirmation email has been sent.",
         });
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
