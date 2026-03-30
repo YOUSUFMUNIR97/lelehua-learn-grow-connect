@@ -25,37 +25,20 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://formspree.io/f/mqegzzdd", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-          _formType: "contact",
-        }),
+      const { error } = await supabase.functions.invoke("send-email", {
+        body: {
+          formType: "contact",
+          userEmail: formData.email,
+          userName: formData.name,
+          formData: {
+            name: formData.name,
+            subject: formData.subject,
+            message: formData.message,
+          },
+        },
       });
 
-      if (response.ok) {
-        // Send confirmation email via Resend
-        try {
-          await supabase.functions.invoke("send-email", {
-            body: {
-              formType: "contact",
-              userEmail: formData.email,
-              userName: formData.name,
-              formData: {
-                name: formData.name,
-                subject: formData.subject,
-                message: formData.message,
-              },
-            },
-          });
-        } catch (emailError) {
-          console.error("Email sending failed:", emailError);
-        }
-
+      if (!error) {
         toast({
           title: "Message Sent!",
           description: "Thank you for reaching out. We'll get back to you within 24-48 hours. A confirmation email has been sent.",
