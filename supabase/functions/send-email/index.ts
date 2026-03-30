@@ -26,7 +26,7 @@ serve(async (req) => {
 
     const { formType, userEmail, userName, formData }: EmailRequest = await req.json();
 
-    const adminEmail = "admin@lelehua.com";
+    const adminEmail = "wajeehamasod570@gmail.com";
     const fromEmail = "LeLeHua <noreply@lelehua.com>";
 
     // 1. Send confirmation email to user
