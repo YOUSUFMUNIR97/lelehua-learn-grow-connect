@@ -7,7 +7,7 @@ const corsHeaders = {
 };
 
 interface EmailRequest {
-  formType: "contact" | "join";
+  formType: "contact" | "register";
   userEmail: string;
   userName: string;
   formData: Record<string, string>;
@@ -118,7 +118,7 @@ serve(async (req) => {
     let adminHtml: string;
 
     if (formType === "contact") {
-      adminSubject = `New Contact Form: ${formData.subject || "No Subject"}`;
+      adminSubject = "New Contact Form Submission";
       adminHtml = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px;">
           <h2 style="color: #e85d75;">New Contact Form Submission</h2>
@@ -131,7 +131,7 @@ serve(async (req) => {
         </div>
       `;
     } else {
-      adminSubject = `New Member Registration: ${formData.parentName}`;
+      adminSubject = "New Member Registration";
       adminHtml = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px;">
           <h2 style="color: #e85d75;">New Member Registration</h2>
