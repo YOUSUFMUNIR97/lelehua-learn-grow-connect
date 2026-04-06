@@ -30,7 +30,7 @@ const Join = () => {
     try {
       const { error } = await supabase.functions.invoke("send-email", {
         body: {
-          formType: "join",
+          formType: "register",
           userEmail: formData.email,
           userName: formData.parentName,
           formData: {
